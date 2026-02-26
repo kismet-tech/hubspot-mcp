@@ -13,10 +13,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "1.12.3",
+    "@modelcontextprotocol/sdk": "^1.27.0",
     "@shinzolabs/instrumentation-mcp": "^1.0.8",
     "@smithery/sdk": "1.4.3",
-    "zod": "3.22.4"
+    "zod": "^3.25.1"
   },
   "keywords": [
     "mcp",
