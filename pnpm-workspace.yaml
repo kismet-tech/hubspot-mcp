@@ -1,0 +1,5 @@
+# PRD: kismet-infrastructure/infrastructure/ci/docs/plan.md, parity gates.
+# protobufjs 7.5.4 postinstall only checks dependency version compatibility.
+# Keep script approval version-specific so dependency changes need review.
+allowBuilds:
+  protobufjs@7.5.4: true
