@@ -463,7 +463,8 @@ const stdioServer = createServer({})
 const transport = new StdioServerTransport()
 await stdioServer.connect(transport)
 
-// Streamable HTTP Server
-const { app } = createStatefulServer(createServer)
-const PORT = process.env.PORT || 3000
-app.listen(PORT)
+// Streamable HTTP Server (only when PORT is explicitly set)
+if (process.env.PORT) {
+  const { app } = createStatefulServer(createServer)
+  app.listen(Number(process.env.PORT))
+}
